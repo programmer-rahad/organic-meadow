@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Store Locator</title>
+
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- start header section -->
+    <header>
+      <div id="organic-popup">
+        <div class="container">
+          <i class="fas fa-times"></i>
+          <div class="d-flex align-items-center">
+            <img src="assets/images/popup-milk.jpg" alt="" />
+            <p class="popup-content">
+              Looking to return your empty glass bottles? Some stores have
+              started accepting glass bottle returns. In Toronto, you can return
+              them to Fortino's, Beach Valumart, McEwan's, Fresh Fields, Garden
+              Milk & Variety, Bathurst Village Market and Burnhamthorpe Fruit
+              Market (Mississauga). Contact your local store for details.
+            </p>
+            <a href="#">Go</a>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">
+            <img src="assets/images/logo.png" alt="" />
+          </a>
+        </div>
+        <a href="#" class="text-uppercase">storelocator</a>
+        <button><i class="fas fa-bars"></i></button>
+        <nav class="text-uppercase">
+          <ul>
+            <li><a href="about-us.html">about us</a></li>
+            <li><a href="why-organic.html">why organic</a></li>
+            <li>
+              <a href="products.html">our products</a>
+              <ul>
+                <li>
+                  <a href="organic-grass-fed-milk.html"
+                    >ORGANIC GRASS FED MILK</a
+                  >
+                </li>
+                <li><a href="#">ORGANIC MILK</a></li>
+                <li><a href="#">ORGANIC CREAM</a></li>
+                <li><a href="#">ORGANIC BUTTER</a></li>
+                <li><a href="#">ORGANIC YOGURT</a></li>
+                <li><a href="#">ORGANIC KEFIR</a></li>
+                <li><a href="#">ORGANIC CREAM CHEESE</a></li>
+                <li><a href="#">ORGANIC SOUR CREAM</a></li>
+                <li><a href="#">ORGANIC COTTAGE CHEESE</a></li>
+                <li>
+                  <a href="organic-cheddar-cheese-sticks.html"
+                    >ORGANIC CHEESE</a
+                  >
+                </li>
+                <li><a href="#">ORGANIC ICE CREAM</a></li>
+              </ul>
+            </li>
+            <li><a href="loop.html">our Loop</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="faq.html">faq</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+
+    <!-- start location banner section -->
+    <section
+      id="banner-section"
+      class="d-flex align-items-center location-banner"
+    >
+      <div class="container text-uppercase text-end">
+        <h2 class="page-banner-title">
+          <span>store</span>
+          <span>locator</span>
+        </h2>
+      </div>
+    </section>
+    <!-- end location banner section -->
+
+    <!-- start location-content section -->
+    <section id="location-content">
+      <div class="container">
+        <h2 class="section-title">
+          Find <br />
+          A Store
+        </h2>
+        <p>
+          The following stores proudly carry Organic Meadow dairy products.
+          Please note, product selection will vary by store.
+        </p>
+        <div class="google-map organic-google-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d44095.72962166614!2d-79.4642193!3d46.3101731!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1619783028038!5m2!1sen!2sbd"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+        <div class="find-store">
+          <form action="#">
+            <div class="row">
+              <div class="col-md-6">
+                <label for="postal-code">Address or Zip/Postal Code:</label>
+                <input type="text" />
+              </div>
+              <div class="col-md-6">
+                <label for="maximum-result">Maximum # of Results:</label>
+                <select id="maximum-result">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+              <div>
+                <label for="search-locations"
+                  >Search Locations that Carry:</label
+                >
+                <input id="search-locations" type="checkbox" /><label
+                  for="search-locations"
+                  >All Organic Products</label
+                >
+              </div>
+              <div>
+                <label for="has-organic-products"
+                  >Search Locations that specifically Carry:</label
+                >
+                <br />
+                <input id="has-organic-products" type="checkbox" /><label
+                  for="has-organic-products"
+                  >Has Any Organic Products</label
+                >
+              </div>
+              <div>
+                <input
+                  class="text-uppercase"
+                  type="submit"
+                  value="Find a store"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="location-table">
+          <h4>We found the 5 closest locations to your search.</h4>
+          <table>
+            <thead>
+              <tr>
+                <th>Name / Description</th>
+                <th>Address</th>
+                <th>Contact</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a href="#">Sobeys</a></td>
+                <td>
+                  <p>
+                    1899 Algonquin Ave. N. North Bay ON Canada P1B4Y3
+                    <span class="distance">Distance: 1.18 km</span>
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    P: 705-472-4001
+                    <a href="#">Website</a>
+                  </p>
+                </td>
+                <td>
+                  <a href="#">details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><a href="#">Veg Out</a></td>
+                <td>
+                  <p>
+                    207 Ferguson Street North Bay ON Canada P1B1W9
+                    <span class="distance">Distance: 2.27 km</span>
+                  </p>
+                </td>
+                <td>
+                  <p>P: 705-495-0020</p>
+                </td>
+                <td>
+                  <a href="#">details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><a href="#">Dollar's YIG</a></td>
+                <td>
+                  <p>
+                    1 Laurentian Dr North Bay ON Canada P1B9P2
+                    <span class="distance">Distance: 3.27 km</span>
+                  </p>
+                </td>
+                <td>
+                  <p>P: 705-472-8866</p>
+                </td>
+                <td>
+                  <a href="#">details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><a href="#">Metro</a></td>
+                <td>
+                  <p>
+                    390 Lakeshore Dr North Bay ON Canada P1A2C7
+                    <span class="distance">Distance: 6.05 km</span>
+                  </p>
+                </td>
+                <td>
+                  <p>P: 705-840-2424</p>
+                </td>
+                <td>
+                  <a href="#">details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><a href="#">Zak's Natural Foods</a></td>
+                <td>
+                  <p>
+                    10 John Street Sundridge ON Canada P0A1Z0
+                    <span class="distance">Distance: 62.31 km</span>
+                  </p>
+                </td>
+                <td>
+                  <p>P: 705-384-0884</p>
+                </td>
+                <td>
+                  <a href="#">details</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <!-- end location-content section -->
+
+    <!-- start footer section -->
+    <footer>
+      <div>
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col">
+              <div class="footer-widget text-uppercase">
+                <p>Follow us on:</p>
+                <!-- 
+                  <a href="#"><i class="fab fa-facebook"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a> 
+                -->
+                <a href="#">
+                  <img src="assets/images/footer/facebook.png" alt="" />
+                </a>
+                <a href="#">
+                  <img src="assets/images/footer/twitter.png" alt="" />
+                </a>
+                <a href="#">
+                  <img src="assets/images/footer/instagram.png" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="footer-widget text-uppercase">
+                <ul class="footer-links">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">about us</a></li>
+                  <li><a href="#">our products</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="footer-widget text-uppercase">
+                <ul class="footer-links">
+                  <li><a href="#">why organic</a></li>
+                  <li><a href="#">events/news</a></li>
+                  <li><a href="#">recipes</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="footer-widget text-uppercase">
+                <ul class="footer-links">
+                  <li><a href="#">faq</a></li>
+                  <li><a href="#">contact us</a></li>
+                  <li><a href="#">store locator</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="footer-widget">
+                <div class="footer-logos">
+                  <a href="#">
+                    <img src="assets/images/footer-logo-1.png" alt="" />
+                  </a>
+                  <a href="#">
+                    <img src="assets/images/footer-logo-2.png" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="container">
+          <p>
+            &copy; Copyright 2021 Organic Meadow Limited Partnership. All Rights
+            Reserved. <a href="#">Web Design</a> and
+            <a href="#">Content Management</a> by
+            <a href="#">REM Web Solutions</a>. &nbsp;&nbsp; &nbsp; |
+            &nbsp;&nbsp;&nbsp; <a href="#">Privacy Policy</a>
+          </p>
+          <div class="c-right">
+            PHONE: <a href="tel:18667679694">1-866-767-9694</a> |
+            <a href="#">info@organicmeadow.com</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer section -->
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>

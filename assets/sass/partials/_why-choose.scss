@@ -1,0 +1,72 @@
+#why-choose {
+  padding: 150px 0;
+  background-image: url(../images/baby-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  .text {
+    text-align: center;
+    width: 65%;
+    @include md-max {
+      width: 100%;
+    }
+    h2 {
+      color: #fff;
+      span {
+        &:first-child {
+          font-size: 60px;
+          position: relative;
+          display: block;
+          &::after {
+            content: " ";
+            height: 5px;
+            width: 90px;
+            background-color: #fff;
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            @include mobile-max {
+                bottom: -7px;
+              height: 3px;
+            }
+          }
+          @include md-max {
+            font-size: 50px;
+          }
+          @include mobile-max {
+            font-size: 35px;
+          }
+        }
+        &:last-child {
+          font-size: 82px;
+          margin-top: 10px;
+          display: inline-block;
+          margin-bottom: 10px;
+          @include md-max {
+            font-size: 65px;
+          }
+          @include mobile-max {
+            font-size: 40px;
+          }
+        }
+      }
+      & + div {
+        a {
+          font-family: $secondary-font;
+          color: #fff;
+          font-size: 18px;
+          border: 2px solid;
+          padding: 7px 18px;
+          padding-top: 9px;
+          border-radius: 5px;
+          &:hover {
+            background: rgba(0,0,0,.25);
+            border-color: rgba(255,255,255,.8);
+          }
+        }
+      }
+    }
+  }
+}

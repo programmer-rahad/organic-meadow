@@ -1,0 +1,60 @@
+#find-store {
+  padding: 60px 0;
+  background-image: url(../images/find-store-bg.jpg);
+  .container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    @include md-max {
+      flex-wrap: wrap;
+    }
+  }
+  .map-icon {
+    @include md-max {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  .find-store-text {
+    position: relative;
+    @include md-max {
+      text-align: center;
+    }
+    h3 {
+      color: #1c1c1b;
+      font-size: 38px;
+    }
+    p {
+      color: #000;
+      font-size: 18px;
+      font-weight: 500;
+      @include md-max {
+        br {
+          display: none;
+        }
+      }
+    }
+    a:last-child {
+      position: absolute;
+      bottom: -25px;
+      background-color: #efc231;
+      padding: 10px 15px;
+      padding-top: 12px;
+      color: white;
+      font-family: $secondary-font;
+      font-size: 18px;
+      border-radius: 5px;
+      background-image: url(../images/magnifier_tool.png);
+      background-repeat: no-repeat;
+      background-position: right center;
+      padding-right: 50px;
+      &:hover {
+        background-color: #e6b411;
+      }
+      @include md-max {
+        position: relative;
+        bottom: -20px;
+      }
+    }
+  }
+}

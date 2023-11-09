@@ -1,0 +1,24 @@
+#banner-slider {
+  .carousel-item {
+    background-size: cover;
+    background-position: center center;
+    background-image: none !important;
+  }
+  .carousel-indicators {
+    justify-content: flex-end; 
+    button {
+      &[data-bs-target] {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: transparent;
+        border: 2px solid #fff;
+        opacity: 1;
+        margin-left: 8px;
+      }
+      &.active {
+        background: #0074c8;
+      }
+    }
+  }
+}

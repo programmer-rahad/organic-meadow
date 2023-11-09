@@ -1,0 +1,29 @@
+// recipies-banner-background.jpg
+#banner-section.recipes-banner {
+  background-image: url(../images/recipes/recipies-banner-background.jpg);
+}
+#common-section.recipe-content {
+  @include tab-max {
+    padding: 60px 0;
+  }
+  .container {
+    max-width: 1190px;
+  }
+  p.recipe-para {
+    margin-top: -30px;
+    margin-bottom: 30px;
+  }
+  .common-items {
+    .single-recipe {
+      @include md-min {
+        min-height: 565px;
+      }
+      @include lg-min {
+      min-height: 550px;
+      }
+      @include xl-min {
+      min-height: 485px;
+      }
+    }
+  }
+}

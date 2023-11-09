@@ -1,0 +1,14 @@
+#banner-section {
+    background-image: url(../images/grass-fed-milk/background.jpg);
+    // background-position: center center;
+    // background-size: cover;
+    display: none;
+}
+.gfm-item {
+    @include md-min {
+        min-height: 525px;
+    }
+    @include xl-min {
+    min-height: 550px;
+    }
+}

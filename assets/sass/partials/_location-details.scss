@@ -1,0 +1,61 @@
+#banner-section.location-banner {
+  background-image: url(../images/location-details-bg.jpg);
+}
+#google-map {
+  padding: 70px 0;
+  .gm-topbar {
+    background-color: #737478;
+    color: white;
+    padding: 6px 15px;
+    h3 {
+      margin-bottom: 0;
+      font-family: $primary-font;
+      font-weight: 400;
+      font-size: 24px;
+    }
+    ul {
+      li {
+        font-size: 13.5px;
+        line-height: 19px;
+        letter-spacing: 0.5px;
+      }
+    }
+  }
+  .location-google-map {
+    margin: 15px 0;
+  }
+  .organic-address {
+    > div {
+      margin-bottom: 12px;
+      a {
+        color: $green;
+        text-decoration: underline;
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        margin-left: 7.5px;
+        margin-right: 7.55px;
+        &:hover {
+          color: $green-light;
+        }
+      }
+    }
+    table {
+        max-width: 370px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 14px;
+        line-height: 1.3;
+      tr {
+        background-color: #ddd;
+        &:nth-child(odd) {
+          background-color: #eee;
+        }
+        td {
+            width: 50%;
+            padding: 5px;
+        }
+      }
+    }
+  }
+}
